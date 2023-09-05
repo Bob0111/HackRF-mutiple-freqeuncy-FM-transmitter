@@ -1,0 +1,1284 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: Custom
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: music_tx_hackrf
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: ''
+    window_size: 1280, 1024
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [186, 53]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: Kosaka_Honoka
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648, 64.0]
+    rotation: 0
+    state: enabled
+- name: Kosaka_Honoka
+  id: variable_qtgui_chooser
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    label0: ''
+    label1: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    labels: '[]'
+    num_opts: '2'
+    option0: '0'
+    option1: '1'
+    option2: '2'
+    option3: '3'
+    option4: '4'
+    options: '[0, 1, 2]'
+    orient: Qt.QHBoxLayout
+    type: int
+    value: '1'
+    widget: radio_buttons
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 68.0]
+    rotation: 0
+    state: disabled
+- name: Minami_Kotori
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [752, 64.0]
+    rotation: 0
+    state: enabled
+- name: Minami_Kotori
+  id: variable_qtgui_chooser
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    label0: ''
+    label1: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    labels: '[]'
+    num_opts: '2'
+    option0: '0'
+    option1: '1'
+    option2: '2'
+    option3: '3'
+    option4: '4'
+    options: '[0, 1, 2]'
+    orient: Qt.QHBoxLayout
+    type: int
+    value: '1'
+    widget: radio_buttons
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1440, 68.0]
+    rotation: 0
+    state: disabled
+- name: Sonoda_Umi
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [560, 64.0]
+    rotation: 0
+    state: enabled
+- name: Sonoda_Umi
+  id: variable_qtgui_chooser
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    label0: ''
+    label1: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    labels: '[]'
+    num_opts: '2'
+    option0: '0'
+    option1: '1'
+    option2: '2'
+    option3: '3'
+    option4: '4'
+    options: '[0, 1, 2]'
+    orient: Qt.QHBoxLayout
+    type: int
+    value: '1'
+    widget: radio_buttons
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1240, 68.0]
+    rotation: 0
+    state: disabled
+- name: hseconds
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1048, 64.0]
+    rotation: 0
+    state: true
+- name: minutes
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [920, 64.0]
+    rotation: 0
+    state: true
+- name: seconds
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [984, 64.0]
+    rotation: 0
+    state: true
+- name: analog_wfm_tx_1
+  id: analog_wfm_tx
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_rate: '44100'
+    comment: ''
+    fh: '-1.0'
+    max_dev: 3e3
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quad_rate: '44100'
+    tau: 75e-6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [824, 404.0]
+    rotation: 0
+    state: enabled
+- name: audio_source_0
+  id: audio_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    device_name: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_outputs: '1'
+    ok_to_block: 'True'
+    samp_rate: '44100'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [304, 576.0]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 432.0]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_1
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '3'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1800, 440.0]
+    rotation: 0
+    state: enabled
+- name: blocks_freqshift_cc_0
+  id: blocks_freqshift_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: 1e6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sample_rate: samp_rate*100
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1344, 392.0]
+    rotation: 0
+    state: true
+- name: blocks_freqshift_cc_1
+  id: blocks_freqshift_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: -1.5e6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sample_rate: samp_rate*100
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 544.0]
+    rotation: 0
+    state: enabled
+- name: blocks_freqshift_cc_2
+  id: blocks_freqshift_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: '0.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sample_rate: samp_rate*100
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1344, 464.0]
+    rotation: 0
+    state: enabled
+- name: blocks_msgpair_to_var_0
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: seconds
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [736, 784.0]
+    rotation: 0
+    state: enabled
+- name: blocks_msgpair_to_var_1
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: minutes
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [736, 880.0]
+    rotation: 0
+    state: enabled
+- name: blocks_msgpair_to_var_2
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: hseconds
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [736, 680.0]
+    rotation: 0
+    state: enabled
+- name: blocks_msgpair_to_var_3
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: Sonoda_Umi
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [808, 992.0]
+    rotation: 0
+    state: true
+- name: blocks_msgpair_to_var_3_0
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: Kosaka_Honoka
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [800, 1128.0]
+    rotation: 0
+    state: enabled
+- name: blocks_msgpair_to_var_3_0_0
+  id: blocks_msgpair_to_var
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    target: Minami_Kotori
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [800, 1232.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: Minami_Kotori
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1560, 408.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: Kosaka_Honoka
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1560, 472.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_2
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: Sonoda_Umi
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1560, 560.0]
+    rotation: 0
+    state: enabled
+- name: blocks_null_source_0
+  id: blocks_null_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bus_structure_source: '[[0,],]'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_outputs: '1'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [296, 792.0]
+    rotation: 0
+    state: enabled
+- name: blocks_var_to_msg_0
+  id: blocks_var_to_msg
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    msgname: ''
+    target: hseconds
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [200, 984.0]
+    rotation: 0
+    state: true
+- name: blocks_var_to_msg_0_0
+  id: blocks_var_to_msg
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    msgname: ''
+    target: hseconds
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 1120.0]
+    rotation: 0
+    state: enabled
+- name: blocks_var_to_msg_0_0_0
+  id: blocks_var_to_msg
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    msgname: ''
+    target: hseconds
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 1224.0]
+    rotation: 0
+    state: enabled
+- name: blocks_wavfile_source_0
+  id: blocks_wavfile_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: "/home/ybx/\u97F3\u4E50/START DASH.mp3"
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nchan: '1'
+    repeat: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [328, 240.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_0
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\nimport pmt\nimport time\n\n\nclass blk(gr.sync_block):\
+      \  # other base classes are basic_block, decim_block, interp_block\n    \"\"\
+      \"Embedded Python Block example - a simple multiply const\"\"\"\n\n    def __init__(self,\
+      \ example_param=1.0):  # only default arguments here\n        \"\"\"arguments\
+      \ to this function show up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n\
+      \            self,\n            name='Timer',   # will show up in GRC\n    \
+      \        in_sig=[np.complex64],\n            out_sig=None\n        )\n     \
+      \   # if an attribute with the same name as a parameter is found,\n        #\
+      \ a callback is registered (properties work, too).\n        self.message_port_register_out(pmt.intern('minute'))\n\
+      \        self.message_port_register_out(pmt.intern('second'))\n        self.message_port_register_out(pmt.intern('hsecond'))\n\
+      \    def work(self,input_items, output_items):\n        start = time.time()\n\
+      \        while (True):\n            elap = time.time() - start\n           \
+      \ minutes = int (elap / 60)\n            seconds = int (elap - minutes * 60)\n\
+      \            hseconds = int((elap - minutes*60.0 - seconds) *100)\n        \
+      \    seconds_message = pmt.from_long (seconds)\n            minutes_message\
+      \ = pmt.from_long (minutes)\n            hseconds_message = pmt.from_long (hseconds)\n\
+      \            self.message_port_pub(pmt.intern('hsecond'), pmt.cons(pmt.string_to_symbol(\"\
+      hseconds\"), hseconds_message))\n            self.message_port_pub(pmt.intern('second'),pmt.cons(pmt.string_to_symbol(\"\
+      seconds\"), seconds_message))\n            self.message_port_pub(pmt.intern('minute'),\
+      \ pmt.cons(pmt.string_to_symbol(\"minutes\"), minutes_message))\n          \
+      \  time.sleep(0.001)\n            \n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    example_param: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('Timer', 'blk', [('example_param', '1.0')], [('0', 'complex', 1)],
+      [('hsecond', 'message', 1), ('second', 'message', 1), ('minute', 'message',
+      1)], 'Embedded Python Block example - a simple multiply const', [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 760.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\nimport pmt\n\n\nclass blk(gr.sync_block):  # other\
+      \ base classes are basic_block, decim_block, interp_block\n    \"\"\"Embedded\
+      \ Python Block example - a simple multiply const\"\"\"\n\n    def __init__(self,\
+      \ hseconds = 0, seconds = 0, minutes = 0):  # only default arguments here\n\
+      \        \"\"\"arguments to this function show up as parameters in GRC\"\"\"\
+      \n        gr.sync_block.__init__(\n            self,\n            name='Sonoda\
+      \ Umi',   # will show up in GRC\n            in_sig=None,\n            out_sig=None\n\
+      \        )\n        # if an attribute with the same name as a parameter is found,\n\
+      \        # a callback is registered (properties work, too).\n        self.message_port_register_in(pmt.intern('hseconds'))\n\
+      \        self.message_port_register_out(pmt.intern('Sonoda_Umi'))\n        self.set_msg_handler(pmt.intern('hseconds'),self.check)\n\
+      \        self.hseconds = hseconds\n        self.seconds = seconds\n        self.minutes\
+      \ = minutes\n        \n        \n    def work(self, input_items, output_items):\n\
+      \        None\n    def check(self, msg):\n        hseconds = self.hseconds\n\
+      \        seconds = self.seconds\n        minutes = self.minutes\n        if\
+      \ minutes == 0 and seconds == 23 and hseconds == 30:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 0 and seconds == 36\
+      \ and hseconds == 9:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 0 and seconds == 42\
+      \ and hseconds == 7:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 0 and seconds == 51\
+      \ and hseconds == 30:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 0 and seconds == 54\
+      \ and hseconds == 59:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 1\
+      \ and hseconds == 16:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 21\
+      \ and hseconds == 72:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 23\
+      \ and hseconds == 86:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 24\
+      \ and hseconds == 18:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 25\
+      \ and hseconds == 93:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 27\
+      \ and hseconds == 11:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 27\
+      \ and hseconds ==97:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 46\
+      \ and hseconds == 32:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 49\
+      \ and hseconds == 64:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 52\
+      \ and hseconds == 63:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 1 and seconds == 55\
+      \ and hseconds == 64:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 1 and seconds == 58\
+      \ and hseconds == 93:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 2 and seconds == 1\
+      \ and hseconds == 75:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 2 and seconds == 4\
+      \ and hseconds == 98:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 2 and seconds == 11\
+      \ and hseconds == 62:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 2 and seconds == 33\
+      \ and hseconds == 24:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 2 and seconds == 34\
+      \ and hseconds == 80:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 2 and seconds == 35\
+      \ and hseconds == 38:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 2 and seconds == 37\
+      \ and hseconds == 29:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 2 and seconds == 45\
+      \ and hseconds == 40:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 2 and seconds == 54\
+      \ and hseconds == 86: # \u95F4\u594F\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 3 and seconds == 10\
+      \ and hseconds == 71:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 3 and seconds == 13\
+      \ and hseconds == 57:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 3 and seconds == 17\
+      \ and hseconds == 7:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 3 and seconds == 23\
+      \ and hseconds == 31:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 3 and seconds == 42\
+      \ and hseconds == 34:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 3 and seconds == 44\
+      \ and hseconds == 53: # tooi\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 3 and seconds == 45\
+      \ and hseconds == 13: # yume no[Honoka]\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 3 and seconds == 46\
+      \ and hseconds == 97: # dakedo\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n        if minutes == 3 and seconds == 47\
+      \ and hseconds == 68:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(0)))\n        if minutes == 3 and seconds == 49\
+      \ and hseconds == 7:\n            self.message_port_pub(pmt.intern('Sonoda_Umi'),pmt.cons(pmt.string_to_symbol(\"\
+      Sonoda_Umi\"), pmt.from_long(1)))\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    hseconds: hseconds
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    minutes: minutes
+    seconds: seconds
+  states:
+    _io_cache: ('Sonoda Umi', 'blk', [('hseconds', '0'), ('seconds', '0'), ('minutes',
+      '0')], [('hseconds', 'message', 1)], [('Sonoda_Umi', 'message', 1)], 'Embedded
+      Python Block example - a simple multiply const', ['hseconds', 'minutes', 'seconds'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 972.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2_0
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\nimport pmt\n\n\nclass blk(gr.sync_block):  # other\
+      \ base classes are basic_block, decim_block, interp_block\n    \"\"\"Embedded\
+      \ Python Block example - a simple multiply const\"\"\"\n\n    def __init__(self,\
+      \ hseconds = 0, seconds = 0, minutes = 0):  # only default arguments here\n\
+      \        \"\"\"arguments to this function show up as parameters in GRC\"\"\"\
+      \n        gr.sync_block.__init__(\n            self,\n            name='Kosaka\
+      \ Honoka',   # will show up in GRC\n            in_sig=None,\n            out_sig=None\n\
+      \        )\n        # if an attribute with the same name as a parameter is found,\n\
+      \        # a callback is registered (properties work, too).\n        self.message_port_register_in(pmt.intern('hseconds'))\n\
+      \        self.message_port_register_out(pmt.intern('Kosaka_Honoka'))\n     \
+      \   self.set_msg_handler(pmt.intern('hseconds'),self.check)\n        self.hseconds\
+      \ = hseconds\n        self.seconds = seconds\n        self.minutes = minutes\n\
+      \        \n        \n    def work(self, input_items, output_items):\n      \
+      \  None\n    def check(self, msg):\n        hseconds = self.hseconds\n     \
+      \   seconds = self.seconds\n        minutes = self.minutes\n        if minutes\
+      \ == 0 and seconds == 23 and hseconds == 30:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 0 and seconds ==\
+      \ 42 and hseconds == 7:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 0 and seconds ==\
+      \ 48 and hseconds == 60:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 0 and seconds ==\
+      \ 54 and hseconds == 59:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 22 and hseconds == 87:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 24 and hseconds == 18:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 24 and hseconds == 99:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 27 and hseconds == 11:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 46 and hseconds == 32:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 52 and hseconds == 63:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 58 and hseconds == 93:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 4 and hseconds == 98:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 32 and hseconds == 7:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 33 and hseconds == 24:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 34 and hseconds == 35:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 35 and hseconds == 38:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 36 and hseconds == 30:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 38 and hseconds == 61:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 10 and hseconds == 71:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 17 and hseconds == 7:\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 43 and hseconds == 63: # Sore wa[Kotori]\n           self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 45 and hseconds == 13: # yume no\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 45 and hseconds == 57: # Kakera\n            self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 47 and hseconds == 68:\n           self.message_port_pub(pmt.intern('Kosaka_Honoka'),pmt.cons(pmt.string_to_symbol(\"\
+      Kosaka_Honoka\"), pmt.from_long(1))) \n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    hseconds: hseconds
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    minutes: minutes
+    seconds: seconds
+  states:
+    _io_cache: ('Kosaka Honoka', 'blk', [('hseconds', '0'), ('seconds', '0'), ('minutes',
+      '0')], [('hseconds', 'message', 1)], [('Kosaka_Honoka', 'message', 1)], 'Embedded
+      Python Block example - a simple multiply const', ['hseconds', 'minutes', 'seconds'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [512, 1108.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2_0_0
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\nimport pmt\n\n\nclass blk(gr.sync_block):  # other\
+      \ base classes are basic_block, decim_block, interp_block\n    \"\"\"Embedded\
+      \ Python Block example - a simple multiply const\"\"\"\n\n    def __init__(self,\
+      \ hseconds = 0, seconds = 0, minutes = 0):  # only default arguments here\n\
+      \        \"\"\"arguments to this function show up as parameters in GRC\"\"\"\
+      \n        gr.sync_block.__init__(\n            self,\n            name='Minami\
+      \ Kotori',   # will show up in GRC\n            in_sig=None,\n            out_sig=None\n\
+      \        )\n        # if an attribute with the same name as a parameter is found,\n\
+      \        # a callback is registered (properties work, too).\n        self.message_port_register_in(pmt.intern('hseconds'))\n\
+      \        self.message_port_register_out(pmt.intern('Minami_Kotori'))\n     \
+      \   self.set_msg_handler(pmt.intern('hseconds'),self.check)\n        self.hseconds\
+      \ = hseconds\n        self.seconds = seconds\n        self.minutes = minutes\n\
+      \        \n        \n    def work(self, input_items, output_items):\n      \
+      \  None\n    def check(self, msg):\n        hseconds = self.hseconds\n     \
+      \   seconds = self.seconds\n        minutes = self.minutes\n        if minutes\
+      \ == 0 and seconds == 36 and hseconds == 9:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 0 and seconds ==\
+      \ 48 and hseconds == 60:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 0 and seconds ==\
+      \ 51 and hseconds == 34:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 1 and hseconds == 16:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 21 and hseconds == 72:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 22 and hseconds == 87:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 23 and hseconds == 86:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 24 and hseconds == 99:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 25 and hseconds == 93:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 27 and hseconds == 97:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 1 and seconds ==\
+      \ 49 and hseconds == 64:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 1 and seconds ==\
+      \ 55 and hseconds == 64:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 1 and hseconds == 75:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 11 and hseconds == 62:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 32 and hseconds ==7:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 34 and hseconds == 35:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 34 and hseconds == 80:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 36 and hseconds == 30:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 37 and hseconds == 29:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 38 and hseconds == 61:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 2 and seconds ==\
+      \ 45 and hseconds == 40: \n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 2 and seconds ==\
+      \ 54 and hseconds == 86: # \u95F4\u594F\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 13 and hseconds == 57:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 23 and hseconds == 31:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 42 and hseconds == 34:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 43 and hseconds == 63:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 44 and hseconds == 53: # tooi[Umi]\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 45 and hseconds == 57: # kakera\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n        if minutes == 3 and seconds ==\
+      \ 46 and hseconds == 97: # Dakedo\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(0)))\n        if minutes == 3 and seconds ==\
+      \ 49 and hseconds == 7:\n            self.message_port_pub(pmt.intern('Minami_Kotori'),pmt.cons(pmt.string_to_symbol(\"\
+      Minami_Kotori\"), pmt.from_long(1)))\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    hseconds: hseconds
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    minutes: minutes
+    seconds: seconds
+  states:
+    _io_cache: ('Minami Kotori', 'blk', [('hseconds', '0'), ('seconds', '0'), ('minutes',
+      '0')], [('hseconds', 'message', 1)], [('Minami_Kotori', 'message', 1)], 'Embedded
+      Python Block example - a simple multiply const', ['hseconds', 'minutes', 'seconds'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [512, 1212.0]
+    rotation: 0
+    state: enabled
+- name: freq
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: ''
+    short_id: f
+    type: eng_float
+    value: 146e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [48, 44.0]
+    rotation: 0
+    state: enabled
+- name: osmosdr_sink_0
+  id: osmosdr_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    ant0: ''
+    ant1: ''
+    ant10: ''
+    ant11: ''
+    ant12: ''
+    ant13: ''
+    ant14: ''
+    ant15: ''
+    ant16: ''
+    ant17: ''
+    ant18: ''
+    ant19: ''
+    ant2: ''
+    ant20: ''
+    ant21: ''
+    ant22: ''
+    ant23: ''
+    ant24: ''
+    ant25: ''
+    ant26: ''
+    ant27: ''
+    ant28: ''
+    ant29: ''
+    ant3: ''
+    ant30: ''
+    ant31: ''
+    ant4: ''
+    ant5: ''
+    ant6: ''
+    ant7: ''
+    ant8: ''
+    ant9: ''
+    args: '""'
+    bb_gain0: '20'
+    bb_gain1: '20'
+    bb_gain10: '20'
+    bb_gain11: '20'
+    bb_gain12: '20'
+    bb_gain13: '20'
+    bb_gain14: '20'
+    bb_gain15: '20'
+    bb_gain16: '20'
+    bb_gain17: '20'
+    bb_gain18: '20'
+    bb_gain19: '20'
+    bb_gain2: '20'
+    bb_gain20: '20'
+    bb_gain21: '20'
+    bb_gain22: '20'
+    bb_gain23: '20'
+    bb_gain24: '20'
+    bb_gain25: '20'
+    bb_gain26: '20'
+    bb_gain27: '20'
+    bb_gain28: '20'
+    bb_gain29: '20'
+    bb_gain3: '20'
+    bb_gain30: '20'
+    bb_gain31: '20'
+    bb_gain4: '20'
+    bb_gain5: '20'
+    bb_gain6: '20'
+    bb_gain7: '20'
+    bb_gain8: '20'
+    bb_gain9: '20'
+    bw0: '0'
+    bw1: '0'
+    bw10: '0'
+    bw11: '0'
+    bw12: '0'
+    bw13: '0'
+    bw14: '0'
+    bw15: '0'
+    bw16: '0'
+    bw17: '0'
+    bw18: '0'
+    bw19: '0'
+    bw2: '0'
+    bw20: '0'
+    bw21: '0'
+    bw22: '0'
+    bw23: '0'
+    bw24: '0'
+    bw25: '0'
+    bw26: '0'
+    bw27: '0'
+    bw28: '0'
+    bw29: '0'
+    bw3: '0'
+    bw30: '0'
+    bw31: '0'
+    bw4: '0'
+    bw5: '0'
+    bw6: '0'
+    bw7: '0'
+    bw8: '0'
+    bw9: '0'
+    clock_source0: ''
+    clock_source1: ''
+    clock_source2: ''
+    clock_source3: ''
+    clock_source4: ''
+    clock_source5: ''
+    clock_source6: ''
+    clock_source7: ''
+    comment: ''
+    corr0: '0'
+    corr1: '0'
+    corr10: '0'
+    corr11: '0'
+    corr12: '0'
+    corr13: '0'
+    corr14: '0'
+    corr15: '0'
+    corr16: '0'
+    corr17: '0'
+    corr18: '0'
+    corr19: '0'
+    corr2: '0'
+    corr20: '0'
+    corr21: '0'
+    corr22: '0'
+    corr23: '0'
+    corr24: '0'
+    corr25: '0'
+    corr26: '0'
+    corr27: '0'
+    corr28: '0'
+    corr29: '0'
+    corr3: '0'
+    corr30: '0'
+    corr31: '0'
+    corr4: '0'
+    corr5: '0'
+    corr6: '0'
+    corr7: '0'
+    corr8: '0'
+    corr9: '0'
+    freq0: 146e6
+    freq1: 100e6
+    freq10: 100e6
+    freq11: 100e6
+    freq12: 100e6
+    freq13: 100e6
+    freq14: 100e6
+    freq15: 100e6
+    freq16: 100e6
+    freq17: 100e6
+    freq18: 100e6
+    freq19: 100e6
+    freq2: 100e6
+    freq20: 100e6
+    freq21: 100e6
+    freq22: 100e6
+    freq23: 100e6
+    freq24: 100e6
+    freq25: 100e6
+    freq26: 100e6
+    freq27: 100e6
+    freq28: 100e6
+    freq29: 100e6
+    freq3: 100e6
+    freq30: 100e6
+    freq31: 100e6
+    freq4: 100e6
+    freq5: 100e6
+    freq6: 100e6
+    freq7: 100e6
+    freq8: 100e6
+    freq9: 100e6
+    gain0: '10'
+    gain1: '10'
+    gain10: '10'
+    gain11: '10'
+    gain12: '10'
+    gain13: '10'
+    gain14: '10'
+    gain15: '10'
+    gain16: '10'
+    gain17: '10'
+    gain18: '10'
+    gain19: '10'
+    gain2: '10'
+    gain20: '10'
+    gain21: '10'
+    gain22: '10'
+    gain23: '10'
+    gain24: '10'
+    gain25: '10'
+    gain26: '10'
+    gain27: '10'
+    gain28: '10'
+    gain29: '10'
+    gain3: '10'
+    gain30: '10'
+    gain31: '10'
+    gain4: '10'
+    gain5: '10'
+    gain6: '10'
+    gain7: '10'
+    gain8: '10'
+    gain9: '10'
+    if_gain0: '20'
+    if_gain1: '20'
+    if_gain10: '20'
+    if_gain11: '20'
+    if_gain12: '20'
+    if_gain13: '20'
+    if_gain14: '20'
+    if_gain15: '20'
+    if_gain16: '20'
+    if_gain17: '20'
+    if_gain18: '20'
+    if_gain19: '20'
+    if_gain2: '20'
+    if_gain20: '20'
+    if_gain21: '20'
+    if_gain22: '20'
+    if_gain23: '20'
+    if_gain24: '20'
+    if_gain25: '20'
+    if_gain26: '20'
+    if_gain27: '20'
+    if_gain28: '20'
+    if_gain29: '20'
+    if_gain3: '20'
+    if_gain30: '20'
+    if_gain31: '20'
+    if_gain4: '20'
+    if_gain5: '20'
+    if_gain6: '20'
+    if_gain7: '20'
+    if_gain8: '20'
+    if_gain9: '20'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nchan: '1'
+    num_mboards: '1'
+    sample_rate: samp_rate*100
+    sync: none
+    time_source0: ''
+    time_source1: ''
+    time_source2: ''
+    time_source3: ''
+    time_source4: ''
+    time_source5: ''
+    time_source6: ''
+    time_source7: ''
+    type: fc32
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1960, 552.0]
+    rotation: 0
+    state: enabled
+- name: ppm
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: ppm
+    short_id: p
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [368, 20.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_sink_x_0
+  id: qtgui_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    bw: samp_rate
+    comment: ''
+    fc: '0'
+    fftsize: '1024'
+    gui_hint: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    plotconst: 'True'
+    plotfreq: 'True'
+    plottime: 'True'
+    plotwaterfall: 'True'
+    rate: '10'
+    showports: 'False'
+    showrf: 'False'
+    type: complex
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1952, 268.0]
+    rotation: 0
+    state: enabled
+- name: rational_resampler_xxx_0
+  id: rational_resampler_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    decim: '1'
+    fbw: '0'
+    interp: '100'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    taps: ''
+    type: ccc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 412.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: ''
+    short_id: ''
+    type: ''
+    value: 44.1e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [200, 160.0]
+    rotation: 0
+    state: true
+
+connections:
+- [analog_wfm_tx_1, '0', rational_resampler_xxx_0, '0']
+- [audio_source_0, '0', blocks_add_xx_0, '1']
+- [blocks_add_xx_0, '0', analog_wfm_tx_1, '0']
+- [blocks_add_xx_1, '0', osmosdr_sink_0, '0']
+- [blocks_add_xx_1, '0', qtgui_sink_x_0, '0']
+- [blocks_freqshift_cc_0, '0', blocks_multiply_const_vxx_0, '0']
+- [blocks_freqshift_cc_1, '0', blocks_multiply_const_vxx_2, '0']
+- [blocks_freqshift_cc_2, '0', blocks_multiply_const_vxx_1, '0']
+- [blocks_multiply_const_vxx_0, '0', blocks_add_xx_1, '0']
+- [blocks_multiply_const_vxx_1, '0', blocks_add_xx_1, '1']
+- [blocks_multiply_const_vxx_2, '0', blocks_add_xx_1, '2']
+- [blocks_null_source_0, '0', epy_block_0, '0']
+- [blocks_var_to_msg_0, msgout, epy_block_2, hseconds]
+- [blocks_var_to_msg_0_0, msgout, epy_block_2_0, hseconds]
+- [blocks_var_to_msg_0_0_0, msgout, epy_block_2_0_0, hseconds]
+- [blocks_wavfile_source_0, '0', blocks_add_xx_0, '0']
+- [epy_block_0, hsecond, blocks_msgpair_to_var_2, inpair]
+- [epy_block_0, minute, blocks_msgpair_to_var_1, inpair]
+- [epy_block_0, second, blocks_msgpair_to_var_0, inpair]
+- [epy_block_2, Sonoda_Umi, blocks_msgpair_to_var_3, inpair]
+- [epy_block_2_0, Kosaka_Honoka, blocks_msgpair_to_var_3_0, inpair]
+- [epy_block_2_0_0, Minami_Kotori, blocks_msgpair_to_var_3_0_0, inpair]
+- [rational_resampler_xxx_0, '0', blocks_freqshift_cc_0, '0']
+- [rational_resampler_xxx_0, '0', blocks_freqshift_cc_1, '0']
+- [rational_resampler_xxx_0, '0', blocks_freqshift_cc_2, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.7.0
