@@ -535,7 +535,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    file: "/home/ybx/\u97F3\u4E50/START DASH.mp3"
+    file: ""
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
